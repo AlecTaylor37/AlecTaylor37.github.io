@@ -1,80 +1,303 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-<title>Personal Website home</title>
+<html>
+<title>My websitre</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/index-stylesheet.css">
+<link rel="stylesheet" href="/mainstylesheet.css">
+<link rel="mystylesheet" href="/mycsssheet.css">
+
 <body>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="placeholderimage.jpg" alt="Me" width="1200" height="300">
-  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">ALEC TAYLOR</h1>
-    <h3 class="w3-hide-large" style="black-space:nowrap">ALEC TAYLOR</h3>
-    <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
-	<h3 class="w3-hide-medium w3-hide-small">GAME DEVELOPER</h3>
-	<h5 class="w3-hide-large w3-hide-large">PHOTOGRAPHER</h5>
-	<h5 class="w3-hide-large w3-hide-large">GAME DEVELOPER</h5>
-
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Alec R.</b> Taylor</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#PhotogrophyProjects" class="w3-bar-item w3-button">Photogrophy</a>
+      <a href="#CV" class="w3-bar-item w3-button">CV</a>
+      
+    </div>
   </div>
-  
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="/index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="/Portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-	<a href="/cv.html" class="w3-bar-item w3-button">CV</a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="topimage.png" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-white w3-opacity-min"><b>Alec Taylor</b><br></span> <span class="w3-hide-small w3-text-light-grey"></span>Programmer<br>Photogropher</h1>
   </div>
 </header>
 
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-  <a href="/cv.html" class="w3-bar-item w3-button">CV</a>
-</div>
-</div>
 <!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+<div class="w3-content w3-padding" style="max-width:1564px">
 
-  <!-- Images (Portfolio) -->
-  <img src="nullimage.png" alt="personal image" class="w3-image" width="360" height="360">
-  <span> About me info </span>
-  
-  <!--<img src="/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">-->
-
-  <!-- Contact -->
-  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-    <h3 class="w3-center">Contact</h3>
-    <hr>
-    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
-
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" required name="Name">
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" required name="Email">
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" required name="Message">
-      </div>
-      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-    </form><br>
-
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
+    <div class="w3-container"style=display:inline-block> 
+      <img src="profilepicture.jpg.png" alt="Girl in a jacket" width="200" height="200">
+      <p>EXAMPLE TEXT</p>
+    </div>
   </div>
 
-<!-- End page content -->
+  <!-- Coding Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Coding Projects</h3>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/DDAimage.jpg" alt="John" style="width:100%">
+      <h3>Dynamic Difficulty in FPS Games</h3>
+      <p class="w3-opacity">Unity C#</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button onclick="document.getElementById('id01').style.display='block'"class="w3-button w3-light-grey w3-block">View Details</button></p>
+
+      <!-- The Modal -->
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <header class="w3-container w3-border-bottom w3-border-light-grey">
+            <h2> Dynamic Difficulty in FPS Games</h2>
+          </header>
+          <div class="w3-container">
+           <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <iframe width="300" height="200" src="https://www.youtube.com/watch?v=qxCLEd_iYis&t=1s"></iframe>           
+            <p>Some text in the Modal..</p>
+            <p>Some text in the Modal..</p>
+            <p>Some text in the Modal..</p>
+            <p>Some text in the Modal..</p>
+            <p>Some text in the Modal..</p>
+            <p>Some text in the Modal..</p>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/PCGimage.jpg" alt="Jane" style="width:100%">
+      <h3>Infinite Cave Generation</h3>
+      <p class="w3-opacity">Unity C#</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/Boidsimage.jpg" alt="Mike" style="width:100%">
+      <h3>Boids Algorithm</h3>
+      <p class="w3-opacity">Urho 3D C++</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/appimage.jpg" alt="Dan" style="width:100%">
+      <h3>Photogrophy App</h3>
+      <p class="w3-opacity">React Native</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/2Dbubblegameimage.jpg" alt="Dan" style="width:100%">
+      <h3>2D Bubble Game</h3>
+      <p class="w3-opacity">SDL & OpenGL</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/3Dspacegameimage.jpg" alt="Dan" style="width:100%">
+      <h3>3D Space Game</h3>
+      <p class="w3-opacity">SDL & OpenGL</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/pinballimage.jpg" alt="Dan" style="width:100%">
+      <h3>Pinball Game</h3>
+      <p class="w3-opacity">PhysX C++</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+  </div>
+
+  <!-- Hardware Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Hardware Projects</h3>
+  </div>
+
+  <!-- Photogrophy Project Section -->
+  <div class="w3-container w3-padding-32" id="PhotogrophyProjects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Photogrophy Projects</h3>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- CV Section -->
+  <div class="w3-container w3-padding-32" id="CV">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CV</h3>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1800px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third w3-small">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <!--<img src="/profilepicture.jpg" style="width:100%" alt="Avatar">-->  
+          <h1>Alec R. Taylor</h1>      
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Lincoln, UK</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>alectaylor1337@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>07948551454</p>
+          <hr>
+          <!-- Skills-->
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+          <p>Unity</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:90%">90%</div>
+          </div>
+          <p>Unreal Engine</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">
+              <div class="w3-center w3-text-white">60%</div>
+            </div>
+          </div>
+          <p>Adobe AE</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p>Blender</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <br>
+          <!-- Languages-->
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-desktop fa-fw w3-margin-right w3-text-black"></i>Languages</b></p>
+          <p>C#</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:90%">90%</div>
+          </div>
+          <p>C++</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">60%</div>
+          </div>
+          <p>HTML / CSS</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p>React Native</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:40%">40%</div>
+          </div>
+
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Spectrum Cleaning - Operator</h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - <span class="w3-tag w3-black w3-round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Dominoes - In Store Crew</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Lincoln</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-black w3-round">Current</span></h6>
+          <p>Master Degree by Research - Computer Science</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Lincoln</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2020</h6>
+          <p>Bachelor Degree - Games Computing</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>John Leggott College</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
+          <p>Extended Diploma - Computing (D*D*D*)</p>
+          <p>As Level - Business & Economics</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
 </div>
+
+<footer class="w3-container w3-black w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
 </body>
 </html>
