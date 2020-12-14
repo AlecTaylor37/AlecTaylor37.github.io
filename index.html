@@ -2,9 +2,9 @@
 <html>
 <title>My websitre</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initialt-scale=1">
 <link rel="stylesheet" href="/mainstylesheet.css">
-<link rel="mystylesheet" href="/mycsssheet.css">
+<link rel="stylesheet" href="/mycsssheet.css">
 
 <body>
 
@@ -14,8 +14,8 @@
     <a href="#home" class="w3-bar-item w3-button"><b>Alec R.</b> Taylor</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#PhotogrophyProjects" class="w3-bar-item w3-button">Photogrophy</a>
       <a href="#CV" class="w3-bar-item w3-button">CV</a>
       
@@ -37,9 +37,10 @@
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
-    <div class="w3-container"style=display:inline-block> 
-      <img src="profilepicture.jpg.png" alt="Girl in a jacket" width="200" height="200">
-      <p>EXAMPLE TEXT</p>
+    <div class="profpic"style=display:inline-block> 
+      <img src="profilepicture.jpg.png" alt="Girl in a jacket" width="200" height="200" style="display: inline-block;" >
+      <div style="display: inline-block;"><p style="display: inline-block;">EXAMPLE TEXT</p>
+      </div>
     </div>
   </div>
 
@@ -53,24 +54,21 @@
       <img src="/DDAimage.jpg" alt="John" style="width:100%">
       <h3>Dynamic Difficulty in FPS Games</h3>
       <p class="w3-opacity">Unity C#</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p>A first person shooter game that contains both a generic 'Easy, Medium, Hard' difficulty system as well as a dynamic one to show the impact dynamic difficulty had on player experience.</p>
       <p><button onclick="document.getElementById('id01').style.display='block'"class="w3-button w3-light-grey w3-block">View Details</button></p>
 
       <!-- The Modal -->
       <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container">
           <header class="w3-container w3-border-bottom w3-border-light-grey">
             <h2> Dynamic Difficulty in FPS Games</h2>
           </header>
+        </div>
           <div class="w3-container">
            <span onclick="document.getElementById('id01').style.display='none'"
             class="w3-button w3-display-topright">&times;</span>
-            <iframe width="300" height="200" src="https://www.youtube.com/watch?v=qxCLEd_iYis&t=1s"></iframe>           
-            <p>Some text in the Modal..</p>
-            <p>Some text in the Modal..</p>
-            <p>Some text in the Modal..</p>
-            <p>Some text in the Modal..</p>
-            <p>Some text in the Modal..</p>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/qxCLEd_iYis" style="margin-top: 20px;"></iframe>           
             <p>Some text in the Modal..</p>
         </div>
       </div>
@@ -81,42 +79,42 @@
       <img src="/PCGimage.jpg" alt="Jane" style="width:100%">
       <h3>Infinite Cave Generation</h3>
       <p class="w3-opacity">Unity C#</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p>A terrain generation algorithm to infinitly create cave terrain within the Unity engine. complete with procedural asset generation including wildlife, environment objects and settlements </p>
       <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/Boidsimage.jpg" alt="Mike" style="width:100%">
       <h3>Boids Algorithm</h3>
       <p class="w3-opacity">Urho 3D C++</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p>Boids algorithm created with C++ in the Urho3D engine to simulate flocking behaviour, in this case, of prehistoric wildlife with multiplayer & networking functionality.</p>
       <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/appimage.jpg" alt="Dan" style="width:100%">
       <h3>Photogrophy App</h3>
       <p class="w3-opacity">React Native</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p>A geoelogical and community based application designed and devloped to a prototype stage that is aimed at photogrophers to save and find good photogrophy locations around the world.</p>
       <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/2Dbubblegameimage.jpg" alt="Dan" style="width:100%">
       <h3>2D Bubble Game</h3>
-      <p class="w3-opacity">SDL & OpenGL</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p class="w3-opacity">SDL & OpenGL C++</p>
+      <p>A 2D nautical version of the classic asteroids game using SDL and OpenGL for game functions and rendering in a c++ environment.</p>
       <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/3Dspacegameimage.jpg" alt="Dan" style="width:100%">
       <h3>3D Space Game</h3>
-      <p class="w3-opacity">SDL & OpenGL</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p class="w3-opacity">SDL & OpenGL C++</p>
+      <p>A 3D space game made to demonstrate 3D rendering capabilities in openGL by converting a 2D game into a 3D game.</p>
       <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/pinballimage.jpg" alt="Dan" style="width:100%">
       <h3>Pinball Game</h3>
       <p class="w3-opacity">PhysX C++</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p>A project aimed at recreating a pinball machine game in a virtual environment with my own phsyics using PhysX.</p>
       <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
   </div>
@@ -133,16 +131,68 @@
 
   <div class="w3-row-padding w3-grayscale">
     <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
+      <img src="/Davids TT/TT humber bridge (1 of 1).jpg" alt="John" style="width:100%">
+      <h3>Autumn Audi Shoot</h3>
+      <p class="w3-opacity">Humber Bridge & Lincolnshire Wolds</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      <p><button onclick="document.getElementById('id02').style.display='block' "class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
+          <!-- The Modal -->
+          <div id="id02" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container">
+              <header class="w3-container w3-border-bottom w3-border-light-grey">
+                <h2> Autumn Audi Shoot</h2>
+              </header>
+            </div>
+              <div class="w3-container">
+               <span onclick="document.getElementById('id02').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+                <div class="row">
+                  <div class="column">
+                    <img style="width: 100%;"src="Davids TT/TT Autumn Road1 (1 of 1).jpg" alt="Nature" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img style="width: 100%;"src="/Davids TT/TT Autumn Road2 (1 of 1).jpg" alt="Snow" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img  style="width: 100%;"src="/Davids" alt="Mountains" onclick="myFunction(this);">
+                  </div>
+                  <div class="column">
+                    <img style="width: 100%;"src="/Davids TT/TT humber bridge2 (1 of 1).jpg" alt="Lights" onclick="myFunction(this);"">
+                  </div>
+                </div>
+                
+                <!-- The expanding image container -->
+                <div class="container">
+                  <!-- Close the image -->
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                  <!-- Expanded image -->
+                  <img id="expandedImg" style="width:50%">
+                
+                  <!-- Image text -->
+                  <div id="imgtext"></div>
+                  <!--JAVA SCRIPT-->
+                  <script>
+                    function myFunction(imgs) {
+                      var expandImg = document.getElementById("expandedImg");
+                      var imgText = document.getElementById("imgtext");
+                      expandImg.src = imgs.src;
+                      imgText.innerHTML = imgs.alt;
+                      expandImg.parentElement.style.display = "block";
+                    }
+                    </script>
+                </div>        
+                <p>Some text in the Modal..</p>
+            </div>
+          </div>
+        </div>
+
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
+      <h3>Steel Wool Shoot</h3>
+      <p class="w3-opacity">Lincoln City Arberetum</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
