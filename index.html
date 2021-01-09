@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initialt-scale=1">
 <link rel="stylesheet" href="/mainstylesheet.css">
 <link rel="stylesheet" href="/mycsssheet.css">
+<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
 
 <body>
 
@@ -16,7 +17,7 @@
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
       <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#PhotogrophyProjects" class="w3-bar-item w3-button">Photogrophy</a>
+      <a href="#PhotogrophyProjects" class="w3-bar-item w3-button">photography</a>
       <a href="#CV" class="w3-bar-item w3-button">CV</a>
       
     </div>
@@ -27,7 +28,7 @@
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="topimage.png" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-white w3-opacity-min"><b>Alec Taylor</b><br></span> <span class="w3-hide-small w3-text-light-grey"></span>Programmer<br>Photogropher</h1>
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-white w3-opacity-min"><b>Alec Taylor</b><br></span> <span class="w3-hide-small w3-text-light-grey"></span>Programmer<br>Photographer</h1>
   </div>
 </header>
 
@@ -148,41 +149,6 @@
               <div class="w3-container">
                <span onclick="document.getElementById('id02').style.display='none'"
                 class="w3-button w3-display-topright">&times;</span>
-                <div class="row">
-                  <div class="column">
-                    <img style="width: 100%;"src="Davids TT/TT Autumn Road1 (1 of 1).jpg" alt="Nature" onclick="myFunction(this);">
-                  </div>
-                  <div class="column">
-                    <img style="width: 100%;"src="/Davids TT/TT Autumn Road2 (1 of 1).jpg" alt="Snow" onclick="myFunction(this);">
-                  </div>
-                  <div class="column">
-                    <img  style="width: 100%;"src="/FD" alt="Mountains" onclick="myFunction(this);">
-                  </div>
-                  <div class="column">
-                    <img style="width: 100%;"src="/Davids TT/TT humber bridge2 (1 of 1).jpg" alt="Lights" onclick="myFunction(this);"">
-                  </div>
-                </div>
-                
-                <!-- The expanding image container -->
-                <div class="container">
-                  <!-- Close the image -->
-                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                
-                  <!-- Expanded image -->
-                  <img id="expandedImg" style="width:50%">
-                
-                  <!-- Image text -->
-                  <div id="imgtext"></div>
-                  <!--JAVA SCRIPT-->
-                  <script>
-                    function myFunction(imgs) {
-                      var expandImg = document.getElementById("expandedImg");
-                      var imgText = document.getElementById("imgtext");
-                      expandImg.src = imgs.src;
-                      imgText.innerHTML = imgs.alt;
-                      expandImg.parentElement.style.display = "block";
-                    }
-                    </script>
                 </div>        
                 <p>Some text in the Modal..</p>
             </div>
@@ -219,7 +185,7 @@
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programer</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programmer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Lincoln, UK</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>alectaylor1337@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>07948551454</p>
@@ -333,6 +299,9 @@
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="venobox/venobox.min.js"></script>
 </footer>
 
 </body>
