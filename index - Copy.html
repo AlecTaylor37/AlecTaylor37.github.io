@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<title>My websitre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialt-scale=1">
+<link rel="stylesheet" href="/mainstylesheet.css">
+<link rel="stylesheet" href="/mycsssheet.css">
+<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Alec R.</b> Taylor</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#projects" class="w3-bar-item w3-button">Computing<br>Portfolio</a>
+      <a href="#PhotogrophyProjects" class="w3-bar-item w3-button">photography<br>Portfolio</a>
+      <a href="#CV" class="w3-bar-item w3-button">CV</a>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="topimage.png" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-white w3-opacity-min"><b>Alec Taylor</b><br></span> <span class="w3-hide-small w3-text-light-grey"></span>Programmer<br>Photographer</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
+    <div class="profpic"style=display:inline-block> 
+      <img src="profilepicture.jpg.png" alt="Girl in a jacket" width="200" height="200" style="display: inline-block;" >
+      <div style="display: inline-block;"><p style="display: inline-block;">EXAMPLE TEXT</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coding Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Coding Projects</h3>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/DDAimage.jpg" alt="John" style="width:100%">
+      <h3>Dynamic Difficulty in FPS Games</h3>
+      <p class="w3-opacity">Unity C#</p>
+      <p>A first person shooter game that contains both a generic 'Easy, Medium, Hard' difficulty system as well as a dynamic one to show the impact dynamic difficulty had on player experience.</p>
+      <p><button onclick="document.getElementById('id01').style.display='block'"class="w3-button w3-light-grey w3-block">View Details</button></p>
+
+      <!-- The Modal -->
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container">
+          <header class="w3-container w3-border-bottom w3-border-light-grey">
+            <h2> Dynamic Difficulty in FPS Games</h2>
+          </header>
+        </div>
+          <div class="w3-container">
+           <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <iframe id="ytplayer" width="100%" height="400" src="https://www.youtube.com/embed/qxCLEd_iYis" style="margin-top: 20px;"></iframe>                   
+            <p>Some text in the Modal..</p> 
+        </div>
+      </div>
+    </div>
+  
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/PCGimage.jpg" alt="Jane" style="width:100%">
+      <h3>Infinite Cave Generation</h3>
+      <p class="w3-opacity">Unity C#</p>
+      <p>A terrain generation algorithm to infinitly create cave terrain within the Unity engine. complete with procedural asset generation including wildlife, environment objects and settlements </p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/Boidsimage.jpg" alt="Mike" style="width:100%">
+      <h3>Boids Algorithm</h3>
+      <p class="w3-opacity">Urho 3D C++</p>
+      <p>Boids algorithm created with C++ in the Urho3D engine to simulate flocking behaviour, in this case, of prehistoric wildlife with multiplayer & networking functionality.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/appimage.jpg" alt="Dan" style="width:100%">
+      <h3>Photogrophy App</h3>
+      <p class="w3-opacity">React Native</p>
+      <p>A geoelogical and community based application designed and devloped to a prototype stage that is aimed at photogrophers to save and find good photogrophy locations around the world.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/2Dbubblegameimage.jpg" alt="Dan" style="width:100%">
+      <h3>2D Bubble Game</h3>
+      <p class="w3-opacity">SDL & OpenGL C++</p>
+      <p>A 2D nautical version of the classic asteroids game using SDL and OpenGL for game functions and rendering in a c++ environment.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/3Dspacegameimage.jpg" alt="Dan" style="width:100%">
+      <h3>3D Space Game</h3>
+      <p class="w3-opacity">SDL & OpenGL C++</p>
+      <p>A 3D space game made to demonstrate 3D rendering capabilities in openGL by converting a 2D game into a 3D game.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/pinballimage.jpg" alt="Dan" style="width:100%">
+      <h3>Pinball Game</h3>
+      <p class="w3-opacity">PhysX C++</p>
+      <p>A project aimed at recreating a pinball machine game in a virtual environment with my own phsyics using PhysX.</p>
+      <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+  </div>
+
+  <!-- Hardware Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Hardware Projects</h3>
+  </div>
+
+  <!-- Photogrophy Project Section -->
+  <div class="w3-container w3-padding-32" id="PhotogrophyProjects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Photogrophy Projects</h3>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/Davids TT/TT humber bridge (1 of 1).jpg" alt="John" style="width:100%">
+      <h3>Autumn Audi Shoot</h3>
+      <p class="w3-opacity">Humber Bridge & Lincolnshire Wolds</p>
+      <p>.</p>
+      <p><button onclick="document.getElementById('id02').style.display='block' "class="w3-button w3-light-grey w3-block">View Details</button></p>
+    </div>
+          <!-- The Modal -->
+          <div id="id02" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+              <div class="w3-container">
+              <header class="w3-container w3-border-bottom w3-border-light-grey">
+                <h2> Autumn Audi Shoot</h2>
+              </header>
+            </div>
+              <div class="w3-container">
+               <span onclick="document.getElementById('id02').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+                </div>        
+                <p>Some text in the Modal..</p>
+            </div>
+          </div>
+        </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="null" style="width:100%">
+      <h3>Steel Wool Shoot</h3>
+      <p class="w3-opacity">Lincoln City Arberetum</p>
+      <p>.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- CV Section -->
+  <div class="w3-container w3-padding-32" id="CV">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CV</h3>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1800px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third w3-small">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <!--<img src="/profilepicture.jpg" style="width:100%" alt="Avatar">-->  
+          <h1>Alec R. Taylor</h1>      
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programmer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Lincoln, UK</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>alectaylor1337@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>07948551454</p>
+          <hr>
+          <!-- Skills-->
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-black"></i>Skills</b></p>
+          <p>Unity</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:90%">90%</div>
+          </div>
+          <p>Unreal Engine</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">
+              <div class="w3-center w3-text-white">60%</div>
+            </div>
+          </div>
+          <p>Adobe After Effects</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">60%</div>
+          </div>
+          <p>Adobe Light Room</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p>Blender</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <br>
+          <!-- Languages-->
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-desktop fa-fw w3-margin-right w3-text-black"></i>Languages</b></p>
+          <p>C#</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:90%">90%</div>
+          </div>
+          <p>C++</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">60%</div>
+          </div>
+          <p>HTML / CSS</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p>React Native</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:40%">40%</div>
+          </div>
+
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Spectrum Cleaning - Operator</h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - <span class="w3-tag w3-black w3-round">Current</span></h6>
+          <p>Example Text.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Dominoes - In Store Crew</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Example Text.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Lincoln</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-black w3-round">Current</span></h6>
+          <p>Master Degree by Research - Computer Science</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Lincoln</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2020</h6>
+          <p>Bachelor Degree - Games Computing</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>John Leggott College</b></h5>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
+          <p>Extended Diploma - Computing (D*D*D*)</p>
+          <p>As Level - Business & Economics</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-black w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="venobox/venobox.min.js"></script>
+</footer>
+
+</body>
+</html>

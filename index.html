@@ -16,17 +16,16 @@
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#PhotogrophyProjects" class="w3-bar-item w3-button">photography</a>
+      <a href="#projects" class="w3-bar-item w3-button">Computing</a>
       <a href="#CV" class="w3-bar-item w3-button">CV</a>
       
     </div>
   </div>
 </div>
-
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="topimage.png" alt="Architecture" width="1500" height="800">
+ <img class="w3-image" src="topimage.png" alt="Architecture" width="1500" height="100">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-white w3-opacity-min"><b>Alec Taylor</b><br></span> <span class="w3-hide-small w3-text-light-grey"></span>Programmer<br>Photographer</h1>
   </div>
@@ -37,17 +36,90 @@
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
-    <div class="profpic"style=display:inline-block> 
-      <img src="profilepicture.jpg.png" alt="Girl in a jacket" width="200" height="200" style="display: inline-block;" >
-      <div style="display: inline-block;"><p style="display: inline-block;">EXAMPLE TEXT</p>
-      </div>
-    </div>
+    <header class="w3-center w3-margin-bottom w3-border-bottom">
+      <h1><b>About</b></h1>
+      </header>
   </div>
+<!-- Photogrophy Project Section -->
+<div class="w3-container w3-padding-32" id="PhotogrophyProjects">
+  <!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom w3-border-bottom">
+<h1><b>PHOTOLIO</b></h1>
+<p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
 
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+<div class="w3-third">
+  <img src="Pictures/Warch-3.jpg" style="width:100%">
+  <img src="Pictures/Warch-5.jpg" style="width:100%">
+  <img src="Pictures/Warch-7.jpg" style="width:100%">
+  <img src="Pictures/Warch-9.jpg" style="width:100%">
+  <img src="Pictures/Warch-3.jpg" style="width:100%">
+  <img src="Pictures/Warch-3.jpg" style="width:100%">
+  <img src="Pictures/Sunglasses1.jpg" style="width:100%">
+  <img src="Pictures/portfolio-7.jpg" style="width:100%">
+  <img src="Pictures/portfolio-8.jpg" style="width:100%">
+  <img src="Pictures/portfolio-10.jpg" style="width:100%">
+  <img src="Pictures/portfolio-17.jpg" style="width:100%">
+  <img src="Pictures/Moon-2.jpg" style="width:100%">
+  <img src="Pictures/flower1.jpg" style="width:100%">
+  <img src="Pictures/Catapillars1.jpg" style="width:100%">
+  <img src="Pictures/flower1.jpg" style="width:100%">
+
+</div>
+
+<div class="w3-third">
+  <img src="Pictures/Wool-1.jpg" style="width:100%">
+  <img src="Pictures/Wool-2.jpg" style="width:100%">
+  <img src="Pictures/Wool3.jpg" style="width:100%">
+  <img src="Pictures/Wool4.jpg" style="width:100%">
+  <img src="Pictures/Wool5.jpg" style="width:100%">
+  <img src="Pictures/Wool-1.jpg" style="width:100%">
+  <img src="Pictures/portfolio-6.jpg" style="width:100%">
+  <img src="Pictures/portfolio-2.jpg" style="width:100%">
+  <img src="Pictures/portfolio-3.jpg" style="width:100%">
+  <img src="Pictures/portfolio-13.jpg" style="width:100%">
+  <img src="Pictures/Robin.jpg" style="width:100%">
+  <img src="Pictures/pigeons.jpg" style="width:100%">
+  <img src="Pictures/portfolio-1.jpg" style="width:100%">
+  <img src="Pictures/flower2.jpg" style="width:100%">
+  <img src="Pictures/flower4.jpg" style="width:100%">
+</div>
+
+<div class="w3-third">
+  <img src="Davids TT/7.jpg" style="width:100%">
+  <img src="Davids TT/11.jpg" style="width:100%">
+  <img src="Davids TT/4.jpg" style="width:100%">
+  <img src="Davids TT/13.jpg" style="width:100%">
+  <img src="Davids TT/15.jpg" style="width:100%">
+  <img src="Davids TT/9.jpg" style="width:100%">
+  <img src="Davids TT/5.jpg" style="width:100%">
+  <img src="Davids TT/12.jpg" style="width:100%">
+  <img src="Davids TT/3.jpg" style="width:100%">
+  <img src="Pictures/portfolio-11.jpg" style="width:100%">
+  <img src="Pictures/portfolio-12.jpg" style="width:100%">
+  <img src="Pictures/Robin-2.jpg" style="width:100%">
+  <img src="Pictures/Robin-3.jpg" style="width:100%">
+  <img src="Pictures/portfolio-10.jpg" style="width:100%">
+  <img src="Pictures/flower3.jpg" style="width:100%">
+
+
+</div>
+</div>
+</div>
   <!-- Coding Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Coding Projects</h3>
+    <div class="w3-opacity">
+      <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+      <div class="w3-clear"></div>
+      <header class="w3-center w3-margin-bottom w3-border-bottom">
+      <h1><b>Computing Portfolio</b></h1>
+      </header>
   </div>
 
   <div class="w3-row-padding w3-grayscale">
@@ -57,24 +129,6 @@
       <p class="w3-opacity">Unity C#</p>
       <p>A first person shooter game that contains both a generic 'Easy, Medium, Hard' difficulty system as well as a dynamic one to show the impact dynamic difficulty had on player experience.</p>
       <p><button onclick="document.getElementById('id01').style.display='block'"class="w3-button w3-light-grey w3-block">View Details</button></p>
-
-      <!-- The Modal -->
-      <div id="id01" class="w3-modal">
-        <div class="w3-modal-content w3-animate-zoom">
-          <div class="w3-container">
-          <header class="w3-container w3-border-bottom w3-border-light-grey">
-            <h2> Dynamic Difficulty in FPS Games</h2>
-          </header>
-        </div>
-          <div class="w3-container">
-           <span onclick="document.getElementById('id01').style.display='none'"
-            class="w3-button w3-display-topright">&times;</span>
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/qxCLEd_iYis" style="margin-top: 20px;"></iframe>           
-            <p>Some text in the Modal..</p>
-        </div>
-      </div>
-    </div>
-      
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="/PCGimage.jpg" alt="Jane" style="width:100%">
@@ -119,54 +173,68 @@
       <p><button class="w3-button w3-light-grey w3-block">View Details</button></p>
     </div>
   </div>
-
-  <!-- Hardware Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Hardware Projects</h3>
-  </div>
-
-  <!-- Photogrophy Project Section -->
-  <div class="w3-container w3-padding-32" id="PhotogrophyProjects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Photogrophy Projects</h3>
-  </div>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/Davids TT/TT humber bridge (1 of 1).jpg" alt="John" style="width:100%">
-      <h3>Autumn Audi Shoot</h3>
-      <p class="w3-opacity">Humber Bridge & Lincolnshire Wolds</p>
-      <p>.</p>
-      <p><button onclick="document.getElementById('id02').style.display='block' "class="w3-button w3-light-grey w3-block">View Details</button></p>
+  
+    <!-- Hardware Project Section -->
+    <!--
+    <div class="w3-container w3-padding-32" id="projects">
+      <div class="w3-opacity">
+        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom w3-border-bottom">
+        <h1><b>Hardware Projects</b></h1>
+        </header>
     </div>
-          <!-- The Modal -->
-          <div id="id02" class="w3-modal">
-            <div class="w3-modal-content w3-animate-zoom">
-              <div class="w3-container">
-              <header class="w3-container w3-border-bottom w3-border-light-grey">
-                <h2> Autumn Audi Shoot</h2>
-              </header>
-            </div>
-              <div class="w3-container">
-               <span onclick="document.getElementById('id02').style.display='none'"
-                class="w3-button w3-display-topright">&times;</span>
-                </div>        
-                <p>Some text in the Modal..</p>
-            </div>
-          </div>
-        </div>
+    -->
 
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="null" style="width:100%">
-      <h3>Steel Wool Shoot</h3>
-      <p class="w3-opacity">Lincoln City Arberetum</p>
-      <p>.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    <!--Videogrophy Section-->
+    <!--Header-->
+    <div class="w3-container w3-padding-32" id="projects">
+      <div class="w3-opacity">
+        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom w3-border-bottom">
+        <h1><b>videography</b></h1>
+        </header>
+      </div>
+
+    <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-third">
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/0YJH3WJ8keU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/uIE5DvoKNcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/ckWHu-L7OJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/m2UkUwQerys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/VjAqliM2Bis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+   </div>
+  
+    <div class="w3-third">
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/Nx33O0Br0J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/SgdsOFaySiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/0odEU9A_0I8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/jH_lh0nvlfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/DYgdej_J5Oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="w3-third">
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/s3KIZAhehIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/CsdMMEZ2P2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/MuFeTC-k3jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/IRzMiUvcVzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="480" height="252" src="https://www.youtube.com/embed/vq8gOfKjXWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     </div>
   </div>
 
-  <!-- CV Section -->
-  <div class="w3-container w3-padding-32" id="CV">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CV</h3>
+     <!-- CV Section -->
+     <div class="w3-container w3-padding-32" id="projects">
+      <div class="w3-opacity">
+        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom w3-border-bottom">
+        <h1><b>CV</b></h1>
+        </header>
+    </div>
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1800px;">
 
@@ -179,13 +247,10 @@
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <!--<img src="/profilepicture.jpg" style="width:100%" alt="Avatar">-->  
-          <h1>Alec R. Taylor</h1>      
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            
-          </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programmer</p>
+          <h1>Alec R. Taylor</h1>      
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-black"></i>Programmer, Photographer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-black"></i>Lincoln, UK</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-black"></i>alectaylor1337@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>07948551454</p>
@@ -202,7 +267,15 @@
               <div class="w3-center w3-text-white">60%</div>
             </div>
           </div>
-          <p>Adobe AE</p>
+          <p>Adobe After Effects</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">60%</div>
+          </div>
+          <p>Adobe Photoshop</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">60%</div>
+          </div>
+          <p>Adobe Light Room</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
           </div>
@@ -219,19 +292,19 @@
           </div>
           <p>C++</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">60%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:70%">70%</div>
           </div>
           <p>HTML / CSS</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">60%</div>
           </div>
           <p>React Native</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:60%">60%</div>
           </div>
           <p>Python</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:40%">40%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:35%">35%</div>
           </div>
 
           <br>
@@ -243,19 +316,24 @@
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
+    <div><br></div>
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Spectrum Cleaning - Operator</h5>
           <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - <span class="w3-tag w3-black w3-round">Current</span></h6>
-          <p>Example Text.</p>
+          <p>This is my current employment role that was undertaken to support my postgraduate education at university. This role's responsobilities include
+            maintaining a strict level of cleanliness throughout the premise which were above the clients satisfactory and conformed to all goverment guidlines.
+          I was also a trust keyholder to the premise and had to operate under strict scheduling</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Dominoes - In Store Crew</b></h5>
-          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Example Text.</p>
+          <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2016 - sep 2017</h6>
+          <p>This role was undertaken when i was 17-18 years of age and while i was studying at Jon Leggott College. This role was
+              was my first taste at working in a profesional enviroment and reinforced the teachings about buisness policy i was receiving on my business course.
+              It also taught me the importance of manamgent, working effectivley as part of a team and customer service values.
+          </p>
           <hr>
         </div>
       </div>
@@ -288,21 +366,28 @@
   <!-- End Grid -->
   </div>
   
-  <!-- End Page Container -->
 </div>
-
-<footer class="w3-container w3-black w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="venobox/venobox.min.js"></script>
-</footer>
-
+  </div>
+  <script>
+    // Toggle grid padding
+    function myFunction() {
+      var x = document.getElementById("myGrid");
+      if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+      } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row",);
+      }
+    }
+    
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.width = "100%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
 </body>
 </html>
